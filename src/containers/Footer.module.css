@@ -1,0 +1,12 @@
+.border {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8332ac;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
