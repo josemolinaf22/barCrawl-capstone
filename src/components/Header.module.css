@@ -7,9 +7,15 @@
   align-items: center;
   background-color: #8332ac;
   color: white;
+  text-decoration: none;
 }
 
 .title {
   font-size: x-large;
   font-weight: bolder;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
