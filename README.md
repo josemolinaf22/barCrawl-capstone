@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Capstone project ideas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+List of Hobbies
 
-## Available Scripts
+- night life
+- Snowboarding
+- soccer
+- drawing
+- gaming
 
-In the project directory, you can run:
+Ideas for capstone
 
-### `npm start`
+- Bar crawl
+- Snowboarding planner
+- soccer players stat page
+- site to sell art
+- info page for a game
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+API that I will use:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+BAR CRAWL
+Will tell you what bars to go to depending on time using api.
+https://developers.google.com/maps
 
-### `npm test`
+SNOWBOARDING
+Will help you plan a snowwboarding trip using api
+https://developer.weatherunlocked.com/documentation/skiresort
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+SOCCER
+will help you compare favorite soccer players
+https://www.sportmonks.com/football-api/#plans-pricing
 
-### `npm run build`
+Art
+help you list items to sell.
+https://www.etsy.com/developers/documentation/getting_started/api_basics
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+GAMING
+help you understand where to get items in game.
+https://github.com/deliton/eldenring-api
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# CAPSTONE || Software Development Specialization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Using React.js to build out a UI for a Salt Lake City Downtown Bar Crawl. Users will be able to follow given path or create custom one.
 
-### `npm run eject`
+# MAIN FEATURES:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Users will be able to create an account/Login
+- They will be able to see location of bars
+- See different crawls
+- Get address of bars
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#ADDITIONAL/FUTURE FEATURES:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Users will be able to post comments on current location
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Will Satify the following conditions
 
-## Learn More
+**Front-End:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Has 3-5 interactive features
+- Communicates with server
+- Has at least 5 components
+- Stores values on state
+- Uses values from state to display information and/or make requests
+- Includes custom styling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Server:**
 
-### Code Splitting
+- Handles requests
+- Sends responses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Database:**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Tables contain data
+- Connects to server
+- Contains at least 1 one:many relationship between tables

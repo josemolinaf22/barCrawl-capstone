@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 70vh;
 }
 .slider {
-  height: 60vh;
+  min-height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +19,16 @@
   cursor: pointer;
 }
 
+.rightArrow {
+  font-size: 3rem;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .image {
-  width: 60vw;
-  height: 40vh;
+  min-width: 60vw;
+  min-height: 60vh;
   border-radius: 10px;
 }
 
@@ -35,12 +43,6 @@
   transform: scale(1.08);
 }
 
-.rightArrow {
-  font-size: 3rem;
-  color: white;
-  z-index: 10;
-  cursor: pointer;
-}
 .description {
   color: white;
   text-align: center;

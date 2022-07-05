@@ -1,0 +1,6 @@
+.section {
+  height: 70vh;
+}
+.crawl_list_container {
+  display: flex;
+}

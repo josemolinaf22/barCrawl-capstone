@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { GalleryData } from "./GalleryData";
-import styles from "./Gallery.module.css";
+import styles from "./LandingPage.module.css";
 
-const Gallery = ({ slides }) => {
+const LandingPage = ({ slides, isLoggedIn }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -22,7 +22,7 @@ const Gallery = ({ slides }) => {
     <div className={styles.body}>
       <div className={styles.slider}>
         <p className={styles.leftArrow} onClick={prevSlide}>
-          &lt;
+          <i className="fa-solid fa-square-caret-left"></i>
         </p>
         {GalleryData.map((gallery, index) => {
           return (
@@ -43,7 +43,7 @@ const Gallery = ({ slides }) => {
           );
         })}
         <p className={styles.rightArrow} onClick={nextSlide}>
-          &gt;
+          <i className="fa-solid fa-square-caret-right"></i>
         </p>
       </div>
       <p className={styles.description}>
@@ -54,4 +54,4 @@ const Gallery = ({ slides }) => {
   );
 };
 
-export default Gallery;
+export default LandingPage;

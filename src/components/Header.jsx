@@ -2,17 +2,28 @@ import React from "react";
 import HeaderCSS from "./Header.module.css";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isLoggedIn, setStatus }) => {
+  const clearSession = () => {
+    localStorage.clear();
+    setStatus();
+  };
+  // console.log("this is from header component", isLoggedIn);
   return (
     <div className={HeaderCSS.border}>
-      <Link to="/login" className={HeaderCSS.link}>
-        Login
-      </Link>
-      <Link to="/" className={HeaderCSS.link}>
+      {isLoggedIn ? (
+        <Link to="/logout" className={HeaderCSS.link} onClick={clearSession}>
+          LOGOUT
+        </Link>
+      ) : (
+        <Link to="/login" className={HeaderCSS.link}>
+          LOGIN
+        </Link>
+      )}
+      <Link to={isLoggedIn ? "/LoginHome" : "/"} className={HeaderCSS.link}>
         <p className={HeaderCSS.title}> SLC BAR CRAWL</p>
       </Link>
-      <Link to="/menu" className={HeaderCSS.link}>
-        Menu
+      <Link to="/about" className={HeaderCSS.link}>
+        About
       </Link>
     </div>
   );
