@@ -20,7 +20,7 @@ const Header = ({ isLoggedIn, setStatus }) => {
         </Link>
       )}
       <Link to={isLoggedIn ? "/LoginHome" : "/"} className={HeaderCSS.link}>
-        <p className={HeaderCSS.title}> SLC BAR CRAWL</p>
+        <p className={HeaderCSS.title}> SLC NIGHT CRAWL</p>
       </Link>
       <Link to="/about" className={HeaderCSS.link}>
         About

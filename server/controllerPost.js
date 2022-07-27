@@ -23,7 +23,7 @@ module.exports = {
     `
       )
       .then((dbRes) => {
-        console.log(req.body.password);
+        // console.log(req.body.password);
         dbRes[0][0].password === req.body.password
           ? res.status(200).send(dbRes[0][0])
           : res.status(403).send("Incorrect password");

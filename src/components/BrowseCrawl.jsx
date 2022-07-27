@@ -30,6 +30,12 @@ const BrowseCrawl = () => {
 
   return (
     <section className="section">
+      <p>
+        {" "}
+        <br />
+        Location 1 starts at 9:00 PM <br /> Location 2 starts at 10:30 PM <br />{" "}
+        Location 3 starts at 11:30 PM
+      </p>
       <Card crawlState={crawlState} />
     </section>
   );

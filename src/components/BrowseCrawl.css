@@ -1,5 +1,10 @@
 .section {
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 .crawl_list_container {
   display: flex;

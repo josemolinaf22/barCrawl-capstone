@@ -15,7 +15,7 @@ const LoginHome = () => {
         <p>Create Crawl</p>
       </div> */}
       <div className={styles.container} onClick={() => handleBcClick()}>
-        <p>Browse Crawl</p>
+        <p>Browse Crawls</p>
       </div>
     </section>
   );
