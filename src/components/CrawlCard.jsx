@@ -10,10 +10,10 @@ const CrawlCard = (props) => {
     axios
       .get(`http://localhost:4006/api/bars/${el.crawl_id}`)
       .then((res) => setBars(res.data))
-      // .then((res) => setBars(res.data))
+
       .catch((err) => console.log("Error with bars .get", err));
   }, []);
-  // console.log(bars);
+
   const barList = bars.map((el, index) => {
     return `<p key='${index}'>NAME: ${el.bar_name}
     LOCATION: ${el.bar_street}</p>`;

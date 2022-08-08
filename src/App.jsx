@@ -25,12 +25,10 @@ function App() {
     }
   }, []);
 
-  // console.log(isLoggedIn);
   return (
     <section className="App">
       <Header isLoggedIn={isLoggedIn} setStatus={setStatus} />
       <Routes>
-        {/* <Route path="/login" element={<Login isLoggedIn={setStatus} />} /> */}
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route
@@ -49,25 +47,14 @@ function App() {
             isLoggedIn ? <LoginHome /> : <Login isLoggedIn={setStatus} />
           }
         />
-        {/* <Route
-          path="/"
-          element={
-            isLoggedIn ? (
-              <Navigate to="/loginHome" />
-            ) : (
-              <LandingPage slides={GalleryData} isLoggedIn={setStatus} />
-            )
-          }
-        /> */}
 
-        {/* <Route path="/loginHome" element={<LoginHome />} /> */}
         <Route
           path="/browsecrawl"
           element={
             isLoggedIn ? <BrowseCrawl /> : <Login isLoggedIn={setStatus} />
           }
         />
-        {/* <Route path="/browsecrawl" element={<BrowseCrawl />} /> */}
+
         <Route path="/logout" element={<Logout isLoggedIn={setStatus} />} />
       </Routes>
       <Footer />

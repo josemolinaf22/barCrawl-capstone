@@ -14,14 +14,12 @@ const Register = () => {
       passwordTwo: null,
     },
     onSubmit: (values) => {
-      // console.log("values before destructure", values);
-
       if (values.password === values.passwordTwo) {
         const bodyObj = {
           username: values.username,
           password: values.password,
         };
-        // console.log(values.username, values.password);
+
         axios
           .post("http://localhost:4006/api/registerUser", bodyObj)
           .then(() => navigate("/LoginHome"))

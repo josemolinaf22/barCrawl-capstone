@@ -7,7 +7,7 @@ const Header = ({ isLoggedIn, setStatus }) => {
     localStorage.clear();
     setStatus();
   };
-  // console.log("this is from header component", isLoggedIn);
+
   return (
     <div className={HeaderCSS.border}>
       {isLoggedIn ? (

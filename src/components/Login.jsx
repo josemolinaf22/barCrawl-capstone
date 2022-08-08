@@ -25,12 +25,11 @@ const Login = ({ isLoggedIn }) => {
         })
 
         .then((res) => {
-          // localStorage.setItem("user", JSON.stringify(res.data.id));
           localStorage.setItem("username", res.data.username);
           isLoggedIn();
           navigate("/LoginHome");
         })
-        // .then(() => navigate("/LoginHome"))
+
         .catch(() => {
           Swal.fire({
             title: "Username Or Password Was Incorrect, Please Try Again",
