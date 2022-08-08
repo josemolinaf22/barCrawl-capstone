@@ -10,14 +10,6 @@ const { verifyUser, registerUser } = require("./controllerPost");
 app.use(express.json());
 app.use(cors());
 
-//endpoint
-// app.get("/api/getAllComments", async (req, res) => {
-//   let allComments = await sequelize.query(`
-//         SELECT * FROM comments
-//     `);
-//   res.status(200).send(allComments[0]);
-// });
-
 app.get("/api/crawl", getCrawls);
 app.get("/api/allComments", getAllComments);
 app.get("/api/bars/:id", getBars);

@@ -6,6 +6,7 @@ const LandingPage = ({ slides, isLoggedIn }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
+  //slideshow JS
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -18,7 +19,10 @@ const LandingPage = ({ slides, isLoggedIn }) => {
     return null;
   }
 
+  // end of slideshow
+
   return (
+    //slideshow  containers 
     <div className={styles.body}>
       <div className={styles.slider}>
         <p className={styles.leftArrow} onClick={prevSlide}>
@@ -46,6 +50,7 @@ const LandingPage = ({ slides, isLoggedIn }) => {
           <i className="fa-solid fa-square-caret-right"></i>
         </p>
       </div>
+  {/* end of slideshow container */}
       <p className={styles.description}>
         New to Salt Lake, or maybe don't know what to do downtown. Here's a bar
         crawl which is to help you bar hop with new people.
