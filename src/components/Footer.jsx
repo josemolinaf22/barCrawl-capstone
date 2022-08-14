@@ -3,7 +3,9 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.border}>
-      <p>© 2022 Jose D Molina</p>
+      <p>
+        ©Jose D Molina <br /> Made In 2022
+      </p>
     </footer>
   );
 };
