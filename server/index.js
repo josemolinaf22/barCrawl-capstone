@@ -11,7 +11,7 @@ const { verifyUser, registerUser } = require("./controllerPost");
 app.use(express.json());
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, "../build")));
+app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 //Endpoints
 app.get("/api/crawl", getCrawls);
@@ -24,8 +24,8 @@ app.post("/api/registerUser", registerUser);
 //   res.sendFile(path.join(__dirname, "../build", "index.html"));
 // });
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.resolve("src", "app", "index.html"));
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/../client/build/index.html"));
 });
 
-app.listen(PORT || 4000 || "0.0.0.0", () => console.log(`Up on ${PORT}`));
+app.listen(PORT || 4000, () => console.log(`Up on ${PORT}`));
