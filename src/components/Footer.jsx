@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Footer.module.css";
 const Footer = () => {
+  const curDate = new Date().getFullYear();
+
   return (
     <footer className={styles.border}>
-      <p>
-        ©Jose D Molina <br /> Made In 2022
-      </p>
+      <p>©Jose D Molina {curDate}</p>
     </footer>
   );
 };

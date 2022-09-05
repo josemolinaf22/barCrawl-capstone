@@ -74,3 +74,8 @@ Using React.js to build out a UI for a Salt Lake City Downtown Bar Crawl. Users 
 - Tables contain data
 - Connects to server
 - Contains at least 1 one:many relationship between tables
+
+# To Start
+
+run nodemon server
+run npm start

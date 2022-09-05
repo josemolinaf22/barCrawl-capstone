@@ -1,18 +1,19 @@
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/LandingComponents/LandingPage";
 import { GalleryData } from "./components/GalleryData";
-import { Navigate, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/LandingComponents/Login";
+import Register from "./components/LandingComponents/Register";
 import React, { useState, useEffect } from "react";
-import About from "./components/About";
-import LoginHome from "./components/LoginHome";
-import BrowseCrawl from "./components/BrowseCrawl";
-import Logout from "./components/Logout";
+import About from "./components/LandingComponents/About";
+import LoginHome from "./components/WebComponents/LoginHome";
+import BrowseCrawl from "./components/WebComponents/BrowseCrawl";
+import Logout from "./components/LandingComponents/Logout";
 
 function App() {
+  // Helps with login feature
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function setStatus() {
@@ -28,6 +29,8 @@ function App() {
   return (
     <section className="App">
       <Header isLoggedIn={isLoggedIn} setStatus={setStatus} />
+
+      {/* Section is to route pages on site */}
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
@@ -57,6 +60,8 @@ function App() {
 
         <Route path="/logout" element={<Logout isLoggedIn={setStatus} />} />
       </Routes>
+
+      {/* End of section */}
       <Footer />
     </section>
   );

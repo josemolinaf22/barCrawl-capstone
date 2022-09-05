@@ -9,3 +9,8 @@
 .crawl_list_container {
   display: flex;
 }
+.loading {
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+}

@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  background: url("https://media2.giphy.com/media/5jYrFiqgTibT37H2sy/giphy.gif?cid=ecf05e47qfxuv34x14sufaxcip1vlptaa44ztzntyblr58gs&rid=giphy.gif&ct=g")
+    no-repeat center;
+  background-size: cover;
 }
 .slider {
   min-height: 65vh;
@@ -44,6 +47,7 @@
 }
 
 .description {
+  font-size: xx-large;
   color: white;
   text-align: center;
   width: 60vw;

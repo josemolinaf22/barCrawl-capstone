@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GalleryData } from "./GalleryData";
+import { GalleryData } from "../GalleryData";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = ({ slides, isLoggedIn }) => {
@@ -22,9 +22,9 @@ const LandingPage = ({ slides, isLoggedIn }) => {
   // end of slideshow
 
   return (
-    //slideshow  containers 
+    //slideshow  containers
     <div className={styles.body}>
-      <div className={styles.slider}>
+      {/* <div className={styles.slider}>
         <p className={styles.leftArrow} onClick={prevSlide}>
           <i className="fa-solid fa-square-caret-left"></i>
         </p>
@@ -49,8 +49,8 @@ const LandingPage = ({ slides, isLoggedIn }) => {
         <p className={styles.rightArrow} onClick={nextSlide}>
           <i className="fa-solid fa-square-caret-right"></i>
         </p>
-      </div>
-  {/* end of slideshow container */}
+      </div> */}
+      {/* end of slideshow container */}
       <p className={styles.description}>
         New to Salt Lake, or maybe don't know what to do downtown. Here's a bar
         crawl which is to help you bar hop with new people.

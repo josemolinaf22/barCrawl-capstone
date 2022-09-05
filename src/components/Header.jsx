@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderCSS from "./Header.module.css";
 import { Link } from "react-router-dom";
+import logo from "../SlcCrawl.png";
 
 const Header = ({ isLoggedIn, setStatus }) => {
   const clearSession = () => {
@@ -20,7 +21,8 @@ const Header = ({ isLoggedIn, setStatus }) => {
         </Link>
       )}
       <Link to={isLoggedIn ? "/LoginHome" : "/"} className={HeaderCSS.link}>
-        <p className={HeaderCSS.title}> SLC NIGHT CRAWL</p>
+        {/* <img src={logo} alt="Logo" className={HeaderCSS.title} /> */}
+        <h1>SLC Crawl </h1>
       </Link>
       <Link to="/about" className={HeaderCSS.link}>
         About

@@ -2,9 +2,9 @@ require("dotenv").config();
 const Sequelize = require("sequelize");
 const bcrypt = require("bcrypt");
 
-const { CONNECTION_STRING } = process.env;
+const { DATABASE_URL } = process.env;
 
-const sequelize = new Sequelize(CONNECTION_STRING, {
+const sequelize = new Sequelize(DATABASE_URL, {
   dialect: "postgres",
   dialectOptions: {
     ssl: {
@@ -22,8 +22,9 @@ module.exports = {
     WHERE username = '${req.body.username}'  
     `
       )
+
       .then((dbRes) => {
-        dbRes[0][0].password === req.body.password
+        bcrypt.compareSync(req.body.password, dbRes[0][0].password)
           ? res.status(200).send(dbRes[0][0])
           : res.status(403).send("Incorrect password");
       })

@@ -6,6 +6,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 const Login = ({ isLoggedIn }) => {
+  // Form functionality
   let navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -13,9 +14,7 @@ const Login = ({ isLoggedIn }) => {
       password: "",
     },
     onSubmit: (values) => {
-      // console.log("values before destructure", values);
       let { password } = values;
-      // console.log(username, password);
 
       password = password.toString();
       axios
@@ -39,6 +38,7 @@ const Login = ({ isLoggedIn }) => {
         });
     },
   });
+  // End of form functionality
 
   return (
     <section className={styles.body}>
