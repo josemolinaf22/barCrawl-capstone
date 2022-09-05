@@ -20,7 +20,7 @@ app.get("/api/bars/:id", getBars);
 app.post("/api/verifyUser", verifyUser);
 app.post("/api/registerUser", registerUser);
 
-app.get("/*", function (req, res) {
+app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
