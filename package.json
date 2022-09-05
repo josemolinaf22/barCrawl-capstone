@@ -26,9 +26,7 @@
   },
   "scripts": {
     "go": "react-scripts start",
-    "postinstall": "npm run build",
-    "start": "cd server && npm install && node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "start": "node ./server/index.js && npm build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
