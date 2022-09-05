@@ -20,8 +20,12 @@ app.get("/api/bars/:id", getBars);
 app.post("/api/verifyUser", verifyUser);
 app.post("/api/registerUser", registerUser);
 
+// app.get("/*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "../build", "index.html"));
+// });
+
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../build", "index.html"));
+  res.sendFile(path.resolve("src", "app", "index.html"));
 });
 
-app.listen(PORT || "0.0.0.0", () => console.log(`Up on ${PORT}`));
+app.listen(PORT || 4000 || "0.0.0.0", () => console.log(`Up on ${PORT}`));
