@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const { PORT } = process.env;
+const { PORT } = process.env || 4000;
 const app = express();
 const path = require("path");
 
@@ -24,6 +24,4 @@ app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "./build", "index.html"));
 });
 
-app.listen(process.env.PORT || 4000, () =>
-  console.log(`Up on ${process.env.PORT}`)
-);
+app.listen(PORT || 4000, () => console.log(`Up on ${PORT}`));
