@@ -22,7 +22,7 @@ const Header = ({ isLoggedIn, setStatus }) => {
       )}
       <Link to={isLoggedIn ? "/LoginHome" : "/"} className={HeaderCSS.link}>
         {/* <img src={logo} alt="Logo" className={HeaderCSS.title} /> */}
-        <h1>SLC Crawl </h1>
+        <h1>SLC Night Crawl </h1>
       </Link>
       <Link to="/about" className={HeaderCSS.link}>
         About

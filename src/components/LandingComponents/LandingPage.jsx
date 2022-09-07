@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GalleryData } from "../GalleryData";
 import styles from "./LandingPage.module.css";
 
-const LandingPage = ({ slides, isLoggedIn }) => {
+const LandingPage = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -52,8 +52,9 @@ const LandingPage = ({ slides, isLoggedIn }) => {
       </div> */}
       {/* end of slideshow container */}
       <p className={styles.description}>
-        New to Salt Lake, or maybe don't know what to do downtown. Here's a bar
-        crawl which is to help you bar hop with new people.
+        New to Salt Lake, or maybe you don't know what to do while being
+        downtown. Don't worry we gotcha covered! Here's a website where you can
+        see what crawls Utahns are up to now.
       </p>
     </div>
   );

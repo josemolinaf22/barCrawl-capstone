@@ -14,9 +14,9 @@ const About = () => {
         <div className="description_container">
           <p>
             {" "}
-            This app was created to help me solidify my understand of React. It
-            helped me improve my web development skills by making api calls
-            while using a database server.
+            Building this app helped me solidify my knowledge of React. It
+            Improved my web development skills by making API calls using a
+            database.
           </p>
         </div>
       </div>
