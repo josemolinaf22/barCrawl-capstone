@@ -15,7 +15,7 @@ const sequelize = new Sequelize(DATABASE_URL, {
 const { Client } = require("pg");
 
 const client = new Client({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
   },
