@@ -18,7 +18,7 @@ const Login = ({ isLoggedIn }) => {
 
       password = password.toString();
       axios
-        .post("http://localhost:4006/api/verifyUser", {
+        .post("http://localhost:3000/api/verifyUser", {
           username: values.username,
           password: password,
         })

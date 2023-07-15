@@ -21,7 +21,7 @@ const Register = () => {
         };
 
         axios
-          .post("http://localhost:4006/api/registerUser", bodyObj)
+          .post("http://localhost:3000/api/registerUser", bodyObj)
           .then(() => navigate("/LoginHome"))
           .catch(() => {
             Swal.fire({

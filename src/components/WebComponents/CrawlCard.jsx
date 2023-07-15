@@ -8,7 +8,7 @@ const CrawlCard = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4006/api/bars/${el.crawl_id}`)
+      .get(`http://localhost:3000/api/bars/${el.crawl_id}`)
       .then((res) => setBars(res.data))
 
       .catch((err) => console.log("Error with bars .get", err));

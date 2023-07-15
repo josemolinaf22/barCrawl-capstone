@@ -50,7 +50,9 @@ module.exports = {
           ? res.status(200).send(dbRes[0][0])
           : res.status(403).send("Incorrect password");
       })
-      .catch(() => res.status(403).send("incorrect username or password"));
+      .catch((err) =>
+        res.status(403).send("incorrect username or password", err)
+      );
   },
   registerUser: async (req, res) => {
     const { username, password } = req.body;
@@ -59,6 +61,7 @@ module.exports = {
     );
 
     if (checkUsername[1].rowCount !== 0) {
+      console.log(checkUsername[1].rowCount);
       res.status(500).send("Username already exists");
     } else {
       const salt = bcrypt.genSaltSync(5);
