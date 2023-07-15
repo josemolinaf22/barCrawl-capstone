@@ -1,9 +1,12 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
 const { PORT } = process.env || 4000;
+const express = require("express");
+
 const app = express();
+
+const cors = require("cors");
 const path = require("path");
+
+require("dotenv").config();
 
 const { getCrawls, getAllComments, getBars } = require("./controllerGet");
 const { verifyUser, registerUser } = require("./controllerPost");
