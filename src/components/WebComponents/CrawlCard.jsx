@@ -14,7 +14,8 @@ const CrawlCard = (props) => {
       .catch((err) => console.log("Error with bars .get", err));
   }, []);
 
-  const barList = bars.map((el, index) => {
+  const barsArr = new Array(bars);
+  const barList = barsArr.map((el, index) => {
     return `<p key='${index}'>NAME: ${el.bar_name}
     LOCATION: ${el.bar_street}</p>`;
   });

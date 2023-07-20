@@ -45,7 +45,7 @@ module.exports = {
       )
 
       .then((dbRes) => res.status(200).send(dbRes[0]))
-      .catch((err) => console.log("backend getCrawl error", err));
+      .catch((err) => console.log("backend getCrawl error", { err }));
   },
 
   getBars: async (req, res) => {

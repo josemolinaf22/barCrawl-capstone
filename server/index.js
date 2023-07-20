@@ -27,4 +27,4 @@ app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "./build", "index.html"));
 });
 
-app.listen(PORT || 4000, () => console.log(`Up on ${PORT}`));
+app.listen(PORT || 4000, () => console.log(`Server running on ${PORT}`));

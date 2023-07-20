@@ -10,7 +10,7 @@ const BrowseCrawl = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get("http://localhost:4006/api/crawl")
+      .get("http://localhost:3000/api/crawl")
       .then((res) => {
         setIsLoading(false);
         setCrawlState(res.data);
