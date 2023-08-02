@@ -1,8 +1,7 @@
 import "./App.css";
-import Header from "./components/Header";
+import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingComponents/LandingPage";
-import { GalleryData } from "./components/GalleryData";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/LandingComponents/Login";
 import Register from "./components/LandingComponents/Register";
@@ -14,7 +13,7 @@ import Logout from "./components/LandingComponents/Logout";
 
 function App() {
   // Helps with login feature
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   function setStatus() {
     setIsLoggedIn(!isLoggedIn);
@@ -28,16 +27,13 @@ function App() {
 
   return (
     <section className="App">
-      <Header isLoggedIn={isLoggedIn} setStatus={setStatus} />
+      <NavBar isLoggedIn={isLoggedIn} setStatus={setStatus} />
 
       {/* Section is to route pages on site */}
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/"
-          element={<LandingPage slides={GalleryData} isLoggedIn={setStatus} />}
-        />
+        <Route path="/" element={<LandingPage isLoggedIn={setStatus} />} />
         <Route
           path="/login"
           element={

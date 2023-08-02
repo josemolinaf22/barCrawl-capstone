@@ -30,9 +30,13 @@ const CrawlCard = (props) => {
     });
   };
   return (
-    <div className="crawl_card" key={index} onClick={() => handleApiClick()}>
-      <div className="crawl_color"> </div>
-      <div className="crawl_name_container">
+    <div
+      className="CardCrawl_card"
+      key={index}
+      onClick={() => handleApiClick()}
+    >
+      <div className="Cardcrawl_color"> </div>
+      <div className="Cardcrawl_name_container">
         <p>{el.crawl_name}</p>
       </div>
     </div>

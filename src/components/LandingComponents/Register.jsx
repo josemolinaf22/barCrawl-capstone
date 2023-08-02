@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Login.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import axios from "axios";
@@ -40,8 +39,8 @@ const Register = () => {
     },
   });
   return (
-    <section className={styles.body}>
-      <section className={styles.signInCard}>
+    <section className="LoginBody">
+      <section className="LoginSignInCard">
         <h1>Create An Account</h1>
         <form onSubmit={formik.handleSubmit}>
           <input

@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./LoginHome.module.css";
 
 const LoginHome = () => {
   const navigate = useNavigate();
@@ -9,8 +8,8 @@ const LoginHome = () => {
   };
 
   return (
-    <section className={styles.body}>
-      <div className={styles.container} onClick={() => handleBcClick()}>
+    <section className="LoginHomebody">
+      <div className="LoginHomeContainer" onClick={() => handleBcClick()}>
         <p>Browse Crawls</p>
       </div>
     </section>

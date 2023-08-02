@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+// import "./Card.css";
 import CrawlCard from "./CrawlCard";
 
 const Card = ({ crawlState }) => {
@@ -8,7 +8,7 @@ const Card = ({ crawlState }) => {
     return <CrawlCard el={el} key={index} />;
   });
 
-  return <section className="crawl_container">{crawlName}</section>;
+  return <section className="CardCrawl_container">{crawlName}</section>;
 };
 
 export default Card;

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import styles from "./Login.module.css";
 import { useFormik } from "formik";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -41,8 +40,8 @@ const Login = ({ isLoggedIn }) => {
   // End of form functionality
 
   return (
-    <section className={styles.body}>
-      <section className={styles.signInCard}>
+    <section className="LoginBody">
+      <section className="LoginSignInCard">
         <h1>Sign In</h1>
         <form onSubmit={formik.handleSubmit}>
           <input
