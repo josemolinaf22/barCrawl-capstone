@@ -1,6 +1,7 @@
 import React from "react";
 import MentorImg from "../Assets/MentorPhoto2.png";
 import BorderSeparator from "../Assets/BorderSeparator.png";
+import Hyperdrive from "./Hyperdrive";
 
 const LandingPage = () => {
   return (
@@ -35,7 +36,7 @@ const LandingPage = () => {
       />
 
       <div className="landingPageBody">
-        <p className={"landingPageDescription"}>
+        <p className="landingPageDescription">
           As a mentor, you have the opportunity to share your knowledge,
           experience, and wisdom with someone who is just starting out or
           looking to make a change in their career.{" "}
@@ -43,7 +44,8 @@ const LandingPage = () => {
       </div>
 
       <div className="landingPageBody">
-        <p className={"landingPageDescription"}>
+        <Hyperdrive />
+        <p className="landingPageDescription">
           Are you ready to start your journey?
         </p>
       </div>

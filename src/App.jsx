@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LandingPage from "./components/LandingComponents/LandingPage";
+import Homepage from "./components/LandingComponents/Homepage";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/LandingComponents/Login";
 import Register from "./components/LandingComponents/Register";
@@ -33,7 +33,15 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
-        <Route path="/" element={<LandingPage isLoggedIn={setStatus} />} />
+        <Route
+          path="/"
+          element={
+            <Homepage
+              // @ts-ignore
+              isLoggedIn={setStatus}
+            />
+          }
+        />
         <Route
           path="/login"
           element={
@@ -54,7 +62,15 @@ function App() {
           }
         />
 
-        <Route path="/logout" element={<Logout isLoggedIn={setStatus} />} />
+        <Route
+          path="/logout"
+          element={
+            <Logout
+              // @ts-ignore
+              isLoggedIn={setStatus}
+            />
+          }
+        />
       </Routes>
 
       {/* End of section */}
